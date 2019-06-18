@@ -23,5 +23,19 @@ ls -al'''
         }
       }
     }
+    stage('build code') {
+      parallel {
+        stage('build docker') {
+          steps {
+            sh 'echo "build code"'
+          }
+        }
+        stage('deploy code') {
+          steps {
+            sh 'echo "test"'
+          }
+        }
+      }
+    }
   }
 }
