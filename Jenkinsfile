@@ -1,13 +1,13 @@
 pipeline {
   agent {
     docker {
-      image 'dombaink/nginx-php7'
       args 'docker ps '
+      image 'dombaink/phpngxver1'
     }
 
   }
   stages {
-    stage('') {
+    stage('error') {
       steps {
         sh 'docker ps -a'
       }
