@@ -12,12 +12,13 @@ pipeline {
         stage('build') {
           steps {
             sh '''ls -al
-docker ps'''
+mkdir test
+ls -al '''
           }
         }
         stage('pull') {
           steps {
-            sh 'git clone https://github.com/dombaink/laravel.git'
+            sh 'git cloneÂ https://github.com/dombaink/laravel.git'
           }
         }
       }
