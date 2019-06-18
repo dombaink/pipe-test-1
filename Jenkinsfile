@@ -7,9 +7,10 @@ pipeline {
 
   }
   stages {
-    stage('error') {
+    stage('build') {
       steps {
-        sh 'ls -al'
+        sh '''ls -al
+docker ps'''
       }
     }
   }
