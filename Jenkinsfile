@@ -18,7 +18,7 @@ ls -al'''
         }
         stage('pull') {
           steps {
-            sh 'git clone https://github.com/dombaink/laravel.git'
+            sh 'git clone https://github.com/dombaink/laravel.git ./test'
           }
         }
       }
