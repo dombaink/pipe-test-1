@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        sh 'docker ps -a'
+        sh 'run -p 8081:8080'
       }
     }
   }
