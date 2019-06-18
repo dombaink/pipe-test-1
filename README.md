@@ -15,8 +15,6 @@ Repository: https://github.com/dombaink/nginx-php7
 * Follows the KISS principle (Keep It Simple, Stupid) to make it easy to understand and adjust the image
 
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/trafex/alpine-nginx-php7.svg)](https://hub.docker.com/r/trafex/alpine-nginx-php7/)
-[![Docker image layers](https://images.microbadger.com/badges/image/trafex/alpine-nginx-php7.svg)](https://microbadger.com/images/trafex/alpine-nginx-php7)
 ![nginx 1.14.1](https://img.shields.io/badge/nginx-1.14-brightgreen.svg)
 ![php 7.2](https://img.shields.io/badge/php-7.2-brightgreen.svg)
 ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)
@@ -27,7 +25,6 @@ Please note that the new builds since 26/01/2019 are exposing a different port t
 To be able to run Nginx as a non-privileged user, the port it's running on needed
 to change to a non-privileged port (above 1024).
 
-The last build of the old version that exposed port 80 was `trafex/alpine-nginx-php7:ba1dd422`
 
 ## Usage
 
