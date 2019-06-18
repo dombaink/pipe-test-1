@@ -1,7 +1,6 @@
 pipeline {
   agent {
     docker {
-      args 'docker ps '
       image 'dombaink/phpngxver1'
     }
 
