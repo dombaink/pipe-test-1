@@ -17,8 +17,6 @@ pipeline {
         }
         stage('pull') {
           steps {
-            sh '''rm -rf laravel
-git update https://github.com/dombaink/laravel.git'''
             git(url: 'https://github.com/dombaink/laravel.git', branch: 'master')
           }
         }
