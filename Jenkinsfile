@@ -13,12 +13,12 @@ pipeline {
           steps {
             sh '''ls -al
 mkdir test
-ls -al '''
+ls -al'''
           }
         }
         stage('pull') {
           steps {
-            sh 'git cloneÂ https://github.com/dombaink/laravel.git'
+            sh 'git clone https://github.com/dombaink/laravel.git'
           }
         }
       }
