@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        sh 'docker ps -a'
+        sh 'ls -al'
       }
     }
   }
