@@ -8,9 +8,18 @@ pipeline {
   }
   stages {
     stage('build') {
-      steps {
-        sh '''ls -al
+      parallel {
+        stage('build') {
+          steps {
+            sh '''ls -al
 docker ps'''
+          }
+        }
+        stage('pull') {
+          steps {
+            sh 'git clone https://github.com/dombaink/laravel.git'
+          }
+        }
       }
     }
   }
